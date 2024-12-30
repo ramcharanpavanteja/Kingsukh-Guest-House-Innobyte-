@@ -11,6 +11,6 @@ Customizable Styles: Easily modify colors, fonts, and layouts via CSS.
 Cross-Browser Compatibility: Works seamlessly on modern browsers
 
 ## **Technologies Used**
-# HTML5: For structuring the content.
-# CSS3: For styling and layout, including custom media queries for responsiveness.
-# Bootstrap 5: For a mobile-first approach and interactive components.
+HTML5: For structuring the content.
+CSS3: For styling and layout, including custom media queries for responsiveness.
+Bootstrap 5: For a mobile-first approach and interactive components.
