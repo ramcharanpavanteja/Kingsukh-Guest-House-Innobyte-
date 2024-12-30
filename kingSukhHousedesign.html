@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsukh Guest House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kingsukh <br> Guest House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <header id="home" class="hero">
+        <div>
+            <h1>Welcome to Kingsukh Guest House</h1>
+            <p>Experience Comfort and Convenience</p>
+            <button class="btn1" onclick="scrollToSection('rooms')">Book Now</button>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container img-fluid ">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="assets/out.jpg" class="img-fluid rounded" alt="Reception">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">About Us</h2>
+                    <p>Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay.</p>
+                    <center>
+                        <div id="social-icons" class="d-flex">
+                            <div class="mx-2">                    
+                                <a href="#"><img class="img-fluid" src="assets/facebook.png" alt="Facebook"></a>
+                            </div>
+                            <div class="mx-2">
+                                <a href="#"><img class="img-fluid" src="assets/twitter.png" alt="Twitter"></a>
+                            </div>
+                            <div class="mx-2">
+                                <a href="https://www.instagram.com/kingsukhguesthouse/"><img class="img-fluid" src="assets/instagram.png" alt="Instagram"></a>
+                            </div>
+                            <div class="mx-2">
+                                <a href="#"><img class="img-fluid" src="assets/youtube.png" alt="YouTube"></a>
+                            </div>
+                        </div>
+                    </center>
+                   
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center fw-semibold mb-5">Explore Nearby Destinations</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="assets/ayodhya.webp" class="img-fluid shadow  mb-3 bg-body-tertiary rounded border border-0"  alt="Ayodhya Hills">
+                <h4>Ayodhya Hills</h4>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/baranti.webp" class="img-fluid shadow  mb-3 bg-body-tertiary rounded border border-0" alt="Baranti">
+                <h4>Baranti</h4>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/palash.webp" class="img-fluid shadow  mb-3 bg-body-tertiary rounded border border-0" alt="Palash Trees">
+                <h4>Palash</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Our Rooms</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow p-2 mb-5 bg-body-tertiary rounded border border-0">
+                        <img src="assets/room1.jpg" class="card-img-top rounded " alt="Room 1">
+                        <div class="card-body">
+                          <h5 class="card-title fw-medium">Deluxe Room</h5>
+                          <p class="card-text">Comfortable and spacious with modern amenities.</p>
+                          <a href="#rooms" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow p-2 mb-5 bg-body-tertiary rounded border border-0">
+                        <img src="assets/large.jpg" class="card-img-top" alt="Large Room">
+                        <div class="card-body">
+                          <h5 class="card-title fw-medium">Family Suite</h5>
+                          <p class="card-text">Perfect for family stays with additional space.</p>
+                          <a href="#rooms" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow p-2 mb-5 bg-body-tertiary rounded border border-0">
+                        <img src="assets/small.jpg" class="card-img-top" alt="Small Room">
+                        <div class="card-body">
+                          <h5 class="card-title fw-medium">Standard Room</h5>
+                          <p class="card-text">Cozy and ideal for solo travelers or short stays.</p>
+                          <a href="#rooms" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+       
+
+    </section>
+
+   <!-- Services Section -->
+<section id="services" class="container-fluid py-5 bg-light">
+    <div class="container py-4">
+        <h2 class="text-center fw-bold mb-5">Our Services</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/service.jpg" class="img-fluid rounded shadow-lg" alt="Services">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <ul class="list-unstyled">
+                    <li class="mb-4">
+                        <h3 class="text-dark d-flex align-items-center">
+                            <span class="badge bg-info me-3">1</span>
+                            High-Class Security
+                        </h3>
+                    </li>
+                    <li class="mb-4">
+                        <h3 class="text-dark d-flex align-items-center">
+                            <span class="badge bg-info me-3">2</span>
+                            24-Hour Room Service
+                        </h3>
+                    </li>
+                    <li class="mb-4">
+                        <h3 class="text-dark d-flex align-items-center">
+                            <span class="badge bg-info me-3">3</span>
+                            Restaurant
+                        </h3>
+                    </li>
+                    <li class="mb-4">
+                        <h3 class="text-dark d-flex align-items-center">
+                            <span class="badge bg-info me-3">4</span>
+                            Travel Assistance
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid py-5 text-center">
+        <h2 class="text-center fw-semibold">Contact Us</h2>
+        <div id="social-icons" class="d-flex justify-content-center p-3 w-100">
+            <div class="mx-2"><a href="#"><img class="img-fluid w-50" src="assets/facebook.png" alt="Facebook"></a></div>
+            <div class="mx-2"><a href="#"><img class="img-fluid w-50" src="assets/twitter.png" alt="Twitter"></a></div>
+            <div class="mx-2"><a href="#"><img class="img-fluid w-50" src="assets/instagram.png" alt="Instagram"></a></div>
+            <div class="mx-2"><a href="#"><img class="img-fluid w-50" src="assets/youtube.png" alt="YouTube"></a></div>
+        </div>
+        <p>Email: kkghosh0099@gmail.com | Phone: +9007062180</p>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Copyright&copy; 2024 Kingsukh Guest House. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

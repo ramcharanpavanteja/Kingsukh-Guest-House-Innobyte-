@@ -1,0 +1,250 @@
+ /* Custom Styles */
+ body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Transparent Navbar */
+.nav-bar {
+    background: rgba(54, 86, 102, 0.65);
+    position: fixed;
+    top: 0;
+    height:10%;
+    width: 100%;
+    color: white;
+    z-index: 999;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-bar.scrolled {
+    background: rgba(54, 86, 102, 1);
+}
+
+a.navbar-brand {
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin:  10px;
+    padding: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f8a200 !important;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/header.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.btn1 {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #f8a200;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    animation: zoomIn 1.5s ease;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #f8a200;
+    text-decoration: none;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+#about  img{
+    width: 100%;
+    max-width: 400px;
+}
+#social-icons{
+    width:30%;
+    margin-top: 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px ;
+    animation: fadeInUp 1s ease;
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #555;
+    animation: fadeInUp 1s ease;
+}
+
+/* Room Cards */
+.room-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: rgba(54, 86, 102, 1); /* Solid background */
+        border-radius: 5px; /* Rounded corners */
+        padding: 15px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #social-icon {
+        width: 100px; /* Smaller size for medium screens */
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+    background-color: rgba(54, 86, 102, 1);
+    border-radius: 5px; 
+    padding: 15px;
+}
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    #social-icon {
+        width: 50px; /* Smaller size for small screens */
+        height: 25px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
