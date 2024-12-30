@@ -1,4 +1,4 @@
-**Kingsukh Guest House Website**
+**Kingsukh Guest House Website Design**
 
 ## **Description**
 This is a responsive website created for Kingsukh Guest House. The site provides details about the guest house, including its rooms, services, and contact information. It is designed to deliver an engaging and user-friendly experience on all devices, including desktops, tablets, and smartphones.
